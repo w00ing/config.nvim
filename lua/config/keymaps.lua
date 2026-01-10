@@ -13,3 +13,10 @@ map("v", "<A-j>", "<esc>gj", { desc = "Move down" })
 
 pcall(vim.keymap.del, "n", "<leader>|")
 vim.keymap.set("n", "<leader>\\", "<C-W>v", { desc = "Split Window Right", remap = true })
+
+vim.keymap.set(
+  "n",
+  "<leader>sx",
+  require("telescope.builtin").resume,
+  { noremap = true, silent = true, desc = "resume" }
+)

@@ -7,3 +7,5 @@ local opt = vim.opt
 opt.wrap = true
 -- Make Esc behave reliably when using Alt/Meta keybindings.
 opt.ttimeoutlen = 10
+
+vim.opt.winbar = "%=%m %f"
