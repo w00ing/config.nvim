@@ -10,6 +10,7 @@ return {
         hide_by_name = {
           ".DS_Store",
           "thumbs.db",
+          ".git",
         },
         never_show = {
           ".git",
