@@ -52,6 +52,27 @@ return {
         hidden = true, -- Also search in hidden files
         ignored = false, -- Include gitignored files
       })
+
+      opts.image = opts.image or {}
+      opts.image.enabled = true
+      opts.image.formats = {
+        "png",
+        "jpg",
+        "jpeg",
+        "gif",
+        "bmp",
+        "webp",
+        "tiff",
+        "heic",
+        "avif",
+        "mp4",
+        "mov",
+        "avi",
+        "mkv",
+        "webm",
+        "pdf",
+        "icns",
+      }
     end,
   },
 }
